@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapbox.NET", "Mapbox.NET\Mapbox.NET.csproj", "{146C9217-90EE-4849-B86D-8BE0A63BC50D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapbox.NET.Tests", "Mapbox.NET.Tests\Mapbox.NET.Tests.csproj", "{DFBAE558-1289-4BB8-861B-620D5271E6A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{146C9217-90EE-4849-B86D-8BE0A63BC50D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146C9217-90EE-4849-B86D-8BE0A63BC50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146C9217-90EE-4849-B86D-8BE0A63BC50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146C9217-90EE-4849-B86D-8BE0A63BC50D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFBAE558-1289-4BB8-861B-620D5271E6A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBAE558-1289-4BB8-861B-620D5271E6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBAE558-1289-4BB8-861B-620D5271E6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBAE558-1289-4BB8-861B-620D5271E6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
