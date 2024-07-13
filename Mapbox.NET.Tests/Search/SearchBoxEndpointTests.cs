@@ -1,3 +1,5 @@
+using Mapbox.NET.Search.Models;
+
 namespace Mapbox.NET.Tests.Search;
 
 public class SearchBoxEndpointTests

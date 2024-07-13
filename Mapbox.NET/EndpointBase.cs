@@ -40,17 +40,21 @@ public abstract class EndpointBase
         return JsonSerializer.Deserialize<T>(content);
     }
 
-    protected async Task<T> HttpGetModern<T>(Url url)
+    protected async Task<T?> HttpGetModern<T>(Url url)
     {
         using var client = GetClient();
 
         try
         {
-            return await client.GetFromJsonAsync<T>(url) ?? throw new InvalidOperationException("i threw this");
+            return await client.GetFromJsonAsync<T>(url);
+        }
+        catch (JsonException jsonException)
+        {
+            throw new Exception("Exception thrown deserializing JSON", jsonException);
         }
         catch(Exception e)
         {
-            throw new Exception("oops", e);
+            throw new Exception("Exception thrown getting result", e);
         }
         
     }

@@ -9,7 +9,7 @@ public class SearchBoxEndpoint : EndpointBase, ISearchBoxEndpoint
 
     protected override string Endpoint => $"search/searchbox/{Mapbox.ApiVersion}/";
 
-    public async Task<SuggestionResult> Suggest(string searchText)
+    public async Task<SuggestionResult?> Suggest(string searchText)
     {
         var queryParams = new
         {

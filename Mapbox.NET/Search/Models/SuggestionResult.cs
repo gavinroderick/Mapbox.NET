@@ -17,7 +17,7 @@ public class Suggestion
     public required string Name { get; set; }
 
     [JsonPropertyName("name_preferred")]
-    public required string NamePreferred { get; set; }
+    public string? NamePreferred { get; set; }
 
     [JsonPropertyName("mapbox_id")]
     public required string MapboxId { get; set; }
@@ -26,10 +26,10 @@ public class Suggestion
     public required string FeatureType { get; set; }
 
     [JsonPropertyName("address")]
-    public required string Address { get; set; }
+    public string? Address { get; set; }
 
     [JsonPropertyName("full_address")]
-    public required string FullAddress { get; set; }
+    public string? FullAddress { get; set; }
 
     [JsonPropertyName("place_formatted")]
     public required string PlaceFormatted { get; set; }
@@ -44,16 +44,16 @@ public class Suggestion
     public required string Maki { get; set; }
 
     [JsonPropertyName("poi_category")]
-    public required List<string> PoiCategory { get; set; }
+    public List<string>? PoiCategory { get; set; }
 
     [JsonPropertyName("poi_category_ids")]
-    public required List<string> PoiCategoryIds { get; set; }
+    public List<string>? PoiCategoryIds { get; set; }
 
     [JsonPropertyName("brand")]
-    public required string Brand { get; set; }
+    public string? Brand { get; set; }
 
     [JsonPropertyName("brand_id")]
-    public required string BrandId { get; set; }
+    public string? BrandId { get; set; }
 
     [JsonPropertyName("external_ids")]
     public Dictionary<string, string>? ExternalIds { get; set; }
@@ -107,7 +107,7 @@ public class Context
 public class Country
 {
     [JsonPropertyName("id")]
-    public required string Id { get; set; }
+    public string? Id { get; set; } 
 
     [JsonPropertyName("name")]
     public required string Name { get; set; }
@@ -122,7 +122,7 @@ public class Country
 public class Region
 {
     [JsonPropertyName("id")]
-    public required string Id { get; set; }
+    public string? Id { get; set; }
 
     [JsonPropertyName("name")]
     public required string Name { get; set; }
@@ -182,7 +182,7 @@ public class Neighborhood
 public class Address
 {
     [JsonPropertyName("id")]
-    public required string Id { get; set; }
+    public string? Id { get; set; }
 
     [JsonPropertyName("name")]
     public required string Name { get; set; }
@@ -197,7 +197,7 @@ public class Address
 public class Street
 {
     [JsonPropertyName("id")]
-    public required string Id { get; set; }
+    public string? Id { get; set; }
 
     [JsonPropertyName("name")]
     public required string Name { get; set; }
