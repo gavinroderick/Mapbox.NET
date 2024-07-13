@@ -2,7 +2,6 @@ using System.Net.Http.Json;
 using System.Security.Authentication;
 using System.Text.Json;
 using Flurl;
-using Microsoft.AspNetCore.Http;
 
 namespace Mapbox.NET;
 
@@ -86,7 +85,7 @@ public abstract class EndpointBase
             case System.Net.HttpStatusCode.InternalServerError:
                 throw new HttpRequestException("Mapbox had an internal server error - which usually means this isn't your fault. Try again in a bit" + GetErrorMessage(resultAsString, response, url));
             case System.Net.HttpStatusCode.BadRequest:
-                throw new BadHttpRequestException("Mapbox returned a Bad Request result - probably something wrong with this SDK! Feel free to raise an issue or a PR on GitHub!"); 
+                throw new HttpRequestException("Mapbox returned a Bad Request result - probably something wrong with this SDK! Feel free to raise an issue or a PR on GitHub!"); 
         }
 
         throw new HttpRequestException(GetErrorMessage(resultAsString, response, url));
