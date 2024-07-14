@@ -20,7 +20,7 @@ jobs:
         run: dotnet build
       - name: Test
         run: dotnet test --collect:"XPlat Code Coverage" --results-directory coverage
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: Mapbox.NET_coverage
           path: coverage/*/coverage.cobertura.xml
