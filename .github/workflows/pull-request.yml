@@ -27,6 +27,7 @@ jobs:
           path: coverage/*/coverage.cobertura.xml
         
   coverage:
+    needs: build_test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
