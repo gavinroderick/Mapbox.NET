@@ -27,4 +27,4 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release Mapbox.NET
     - name: Publish
-      run: dotnet nuget push *.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push Mapbox.NET/bin/Release/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
