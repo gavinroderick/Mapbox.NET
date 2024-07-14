@@ -1,7 +1,7 @@
 # This workflow will publish a the Mapbox.NET package to NuGet 
 # when a new tag is created on the main branch.
 
-name: Publish Mapbox.NET to NuGet
+name: publish Mapbox.NET to NuGet
 
 on:
   push:

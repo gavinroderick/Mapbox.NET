@@ -1,4 +1,4 @@
-name: Build, test & version Mapbox.NET
+name: PR workflow
 
 on:
   pull_request: 
