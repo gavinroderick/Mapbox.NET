@@ -28,6 +28,8 @@ jobs:
   coverage:
     needs: build_test
     runs-on: ubuntu-latest
+    permissions: 
+      pull-requests: write
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -44,9 +46,8 @@ jobs:
           hide_branch_rate: false
           hide_complexity: true
           indicators: true
-          output: file
+          output: both
           thresholds: '60 80'
-
       - name: Add Coverage PR Comment
         uses: marocchino/sticky-pull-request-comment@v2
         if: github.event_name == 'pull_request'
