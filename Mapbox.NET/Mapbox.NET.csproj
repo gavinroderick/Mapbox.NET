@@ -4,13 +4,25 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        
+        <!-- NugetStuff -->
+        <PackageId>Mapbox.NET</PackageId>
+        <IsPackable>true</IsPackable>
+        <Version>0.1.2</Version>
+        <Authors>gavinroderick</Authors>
+        <Company>thingsgavdoes</Company>
+        <RepositoryUrl>https://github.com/gavinroderick/Mapbox.NET</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <!-- /NugetStuff -->
     </PropertyGroup>
 
     <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="/" />
       <PackageReference Include="Flurl" Version="4.0.0" />
-      <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0-preview.6.24327.7" />
-      <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.0-preview.6.24327.7" />
+      <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+      <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
     </ItemGroup>
-
-
+    
 </Project>
